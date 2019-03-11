@@ -16,8 +16,8 @@ if (type === 'restaurant') {
   markerDomEl.style.backgroundImage = "url(http://i.imgur.com/cqR6pUI.png)";
 }
 
-
-new mapboxgl.Marker(markerDomEl).setLngLat(coordinates).addTo(map);
+console.log('inside marker')
+return new mapboxgl.Marker(markerDomEl).setLngLat(coordinates);
 }
 
 module.exports = {
