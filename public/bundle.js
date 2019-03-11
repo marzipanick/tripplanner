@@ -104,7 +104,7 @@ eval("/* Mapbox GL JS is licensed under the 3-Clause BSD License. Full text of l
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("console.log('Hey buddy!');\n\nconst mapboxgl = __webpack_require__(/*! mapbox-gl */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\");\n\nmapboxgl.accessToken = 'pk.eyJ1IjoiY2llbHRhbiIsImEiOiJjanQ0aWZpZ2gxNHN0M3pwcXdwa3RrbGVjIn0.K7xtf_HIobScvVFpm8zmAA';\n\nconst map = new mapboxgl.Map({\n\tcontainer: 'map',\n\tcenter: [ -74.009, 40.705 ], // FullStack NY coordinates; alternatively, use [-87.6354, 41.8885] for Chicago\n\tzoom: 12, // starting zoom\n\tstyle: 'mapbox://styles/mapbox/streets-v10' // mapbox has lots of different map styles available.\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("console.log('Hey buddy!');\n\nconst mapboxgl = __webpack_require__(/*! mapbox-gl */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\");\n// const { markerMaker } = require('./marker')\n\nmapboxgl.accessToken = 'pk.eyJ1IjoiY2llbHRhbiIsImEiOiJjanQ0aWZpZ2gxNHN0M3pwcXdwa3RrbGVjIn0.K7xtf_HIobScvVFpm8zmAA';\n\nconst map = new mapboxgl.Map({\n\tcontainer: 'map',\n\tcenter: [ -74.009, 40.705 ], // FullStack NY coordinates; alternatively, use [-87.6354, 41.8885] for Chicago\n\tzoom: 12, // starting zoom\n\tstyle: 'mapbox://styles/mapbox/streets-v10' // mapbox has lots of different map styles available.\n});\n\n// const marker = markerMaker(\"activity\", [-74.009151, 40.705086]); // or [-87.6354, 41.8885]\n// marker.addTo(map);\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
